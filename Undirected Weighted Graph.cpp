@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/* The  undirected weighted graph is represented via an adjacency list and each entry of a list further contains a vector and further each entry 
+   of a vector contains a pair of int and int representing the adjacent node and weight of the corresponding edge.*/
 int main(){
+	
 	
 	cout<<"Enter the number of vertices or nodes"<<endl;
 	int n;
@@ -53,6 +56,16 @@ int main(){
 			cout<<" ("<<p.first<<","<<p.second<<") ";
 		}
 		cout<<endl;
+		
+		/*  For Instance the output for 4 vertices and 5 edges  will be shown like
+				0--> (1,3)  (2,4)
+				1--> (0,3)  (2,5)  (3,1)
+				2--> (0,4)  (1,5)  (3,2)
+				3--> (1,1)  (2,2)
+				
+				Here 0,1,2,3 are the nodes of the graph
+				0-->(1,3) represents that 0 has an edge with of weight 3 units
+		*/
 	}
 	return 0;
 }
